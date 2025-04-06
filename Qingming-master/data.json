@@ -1,0 +1,104 @@
+{
+    "festival": {
+        "name": "清明节",
+        "date": "农历清明节气",
+        "description": "清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。"
+    },
+    "history": {
+        "origin": "清明节源自上古时代的祖先信仰与春祭礼俗",
+        "timeline": [
+            {
+                "period": "春秋时期",
+                "event": "寒食节形成"
+            },
+            {
+                "period": "唐代",
+                "event": "寒食清明合二为一"
+            },
+            {
+                "period": "宋代",
+                "event": "清明节正式确立"
+            }
+        ]
+    },
+    "customs": [
+        {
+            "name": "扫墓祭祖",
+            "icon": "🏮",
+            "description": "慎终追远，缅怀先人"
+        },
+        {
+            "name": "踏青郊游",
+            "icon": "🌱",
+            "description": "亲近自然，感受春意"
+        },
+        {
+            "name": "放风筝",
+            "icon": "🎨",
+            "description": "寄托思念，放飞心情"
+        },
+        {
+            "name": "插柳枝",
+            "icon": "🍃",
+            "description": "驱邪纳福，祈求平安"
+        }
+    ],
+    "poetry": [
+        {
+            "title": "清明",
+            "author": "杜牧",
+            "content": [
+                "清明时节雨纷纷，",
+                "路上行人欲断魂。",
+                "借问酒家何处有，",
+                "牧童遥指杏花村。"
+            ]
+        },
+        {
+            "title": "清明日对酒",
+            "author": "高翥",
+            "content": [
+                "南北山头多墓田，",
+                "清明祭扫各纷然。",
+                "纸灰飞作白蝴蝶，",
+                "泪血染成红杜鹃。"
+            ]
+        }
+    ],
+    "activities": {
+        "traditional": [
+            "扫墓祭祖",
+            "踏青郊游",
+            "放风筝",
+            "插柳枝"
+        ],
+        "modern": [
+            "文化展览",
+            "诗歌朗诵",
+            "民俗表演",
+            "美食节"
+        ]
+    },
+    "gallery": [
+        {
+            "src": "images/qingming-1.jpg",
+            "title": "清明扫墓",
+            "description": "慎终追远，缅怀先人"
+        },
+        {
+            "src": "images/qingming-2.jpg",
+            "title": "踏青郊游",
+            "description": "亲近自然，感受春意"
+        },
+        {
+            "src": "images/qingming-3.jpg",
+            "title": "放风筝",
+            "description": "寄托思念，放飞心情"
+        },
+        {
+            "src": "images/qingming-4.jpg",
+            "title": "插柳枝",
+            "description": "驱邪纳福，祈求平安"
+        }
+    ]
+} 

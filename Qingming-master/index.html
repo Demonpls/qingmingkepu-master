@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="清明节科普网站 - 传承文化，缅怀先人">
+    <meta name="keywords" content="清明节,传统文化,扫墓,踏青,放风筝">
+    <title>清明节科普 - 传承文化，缅怀先人</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="music/川井宪次 - 孤独な巡礼 (孤独的巡礼).flac" as="audio">
+    <link rel="preload" href="images/hero-bg.jpg" as="image">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script defer src="script.js"></script>
+    <script defer src="games.js"></script>
+    <script defer src="leaves.js"></script>
+    <script defer src="music.js"></script>
+    <script defer src="blessing.js"></script>
+</head>
+<body>
+    <header class="header">·
+        <nav class="nav-container">
+            <div class="logo">清明节之Demonpls'科普</div>
+            <button class="mobile-menu-toggle" aria-label="切换菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#history">历史渊源</a></li>
+                <li><a href="#customs">传统习俗</a></li>
+                <li><a href="#poetry">诗词文化</a></li>
+                <li><a href="#activities">节日活动</a></li>
+                <li><a href="#gallery">图片展示</a></li>
+                <li><a href="#videos">清明旧事</a></li>
+                <li><a href="#games">趣味游戏</a></li>
+                <li><a href="#" id="musicToggle" aria-label="播放/暂停音乐">🎵 音乐</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>清明节</h1>
+                <p class="subtitle">传承千年文化，缅怀先人恩德</p>
+            </div>
+        </section>
+
+        <section id="history" class="section">
+            <h2>历史渊源</h2>
+            <div class="content-container">
+                <div class="text-content">
+                    <p>清明节，又称踏青节、行清节、三月节、祭祖节等，节期在仲春与暮春之交。清明节源自上古时代的祖先信仰与春祭礼俗，兼具自然与人文两大内涵，既是自然节气点，也是传统节日。</p>
+                    <div class="history-details">
+                        <div class="history-item">
+                            <h3>起源与发展</h3>
+                            <p>清明节的起源可以追溯到上古时期，最初是作为二十四节气之一，表示春季的第五个节气。随着历史的发展，清明节逐渐与寒食节、上巳节等传统节日融合，形成了独特的文化内涵。</p>
+                        </div>
+                        <div class="history-item">
+                            <h3>文化内涵</h3>
+                            <p>清明节承载着中华民族慎终追远、缅怀先人的传统美德，体现了中国人对生命的敬畏和对亲情的珍视。同时，清明时节也是踏青郊游、亲近自然的好时节，展现了中国人天人合一的自然观。</p>
+                        </div>
+                        <div class="history-item">
+                            <h3>传统习俗</h3>
+                            <p>清明节的传统习俗包括扫墓祭祖、踏青郊游、放风筝、插柳枝等。这些习俗既体现了对先人的追思之情，也反映了人们对美好生活的向往。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="time">上古时期</div>
+                        <div class="event">二十四节气确立</div>
+                        <div class="description">清明作为春季第五个节气被确立</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">春秋时期</div>
+                        <div class="event">寒食节形成</div>
+                        <div class="description">为纪念介子推，形成寒食节习俗</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">汉代</div>
+                        <div class="event">上巳节兴起</div>
+                        <div class="description">形成踏青、祓禊等习俗</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">唐代</div>
+                        <div class="event">寒食清明合二为一</div>
+                        <div class="description">寒食节与清明节逐渐融合</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">宋代</div>
+                        <div class="event">清明节正式确立</div>
+                        <div class="description">形成完整的节日体系</div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="time">明清时期</div>
+                        <div class="event">习俗完善</div>
+                        <div class="description">形成现代清明节的完整习俗</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="customs" class="section">
+            <h2>传统习俗</h2>
+            <div class="customs-grid">
+                <div class="custom-card">
+                    <div class="custom-icon">🏮</div>
+                    <h3>扫墓祭祖</h3>
+                    <div class="custom-content">
+                        <p>慎终追远，缅怀先人</p>
+                        <ul class="custom-details">
+                            <li>整理墓地环境</li>
+                            <li>摆放祭品（鲜花、水果、糕点）</li>
+                            <li>上香、烧纸、献花</li>
+                            <li>默哀、鞠躬、叩拜</li>
+                            <li>诵读祭文、追思先人</li>
+                            <li>家族团聚、分享故事</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">🌱</div>
+                    <h3>踏青郊游</h3>
+                    <div class="custom-content">
+                        <p>亲近自然，感受春意</p>
+                        <ul class="custom-details">
+                            <li>登山望远</li>
+                            <li>赏花观景</li>
+                            <li>野餐聚会</li>
+                            <li>采摘春菜</li>
+                            <li>放风筝</li>
+                            <li>摄影留念</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">🎨</div>
+                    <h3>放风筝</h3>
+                    <div class="custom-content">
+                        <p>寄托思念，放飞心情</p>
+                        <ul class="custom-details">
+                            <li>制作传统风筝</li>
+                            <li>绘制清明图案</li>
+                            <li>放飞祈福</li>
+                            <li>风筝比赛</li>
+                            <li>风筝文化展示</li>
+                            <li>亲子互动活动</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-card">
+                    <div class="custom-icon">🍃</div>
+                    <h3>插柳枝</h3>
+                    <div class="custom-content">
+                        <p>驱邪纳福，祈求平安</p>
+                        <ul class="custom-details">
+                            <li>采摘新鲜柳枝</li>
+                            <li>佩戴柳枝装饰</li>
+                            <li>插柳驱邪</li>
+                            <li>制作柳环</li>
+                            <li>柳枝祈福</li>
+                            <li>柳枝文化展示</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="poetry" class="section">
+            <h2>诗词文化</h2>
+            <div class="poetry-grid">
+                <div class="poetry-card">
+                    <h3>清明</h3>
+                    <p class="author">杜牧</p>
+                    <div class="poem-content">
+                        <p>清明时节雨纷纷，</p>
+                        <p>路上行人欲断魂。</p>
+                        <p>借问酒家何处有，</p>
+                        <p>牧童遥指杏花村。</p>
+                    </div>
+                    <div class="poetry-info">
+                        <p>这首诗描绘了清明时节细雨绵绵的景象，以及行人思乡的愁绪。诗中"欲断魂"的描写，生动地表现了清明时节人们追思先人的哀伤之情。</p>
+                    </div>
+                </div>
+                <div class="poetry-card">
+                    <h3>清明日</h3>
+                    <p class="author">温庭筠</p>
+                    <div class="poem-content">
+                        <p>清明时节雨纷纷，</p>
+                        <p>路上行人欲断魂。</p>
+                        <p>借问酒家何处有，</p>
+                        <p>牧童遥指杏花村。</p>
+                    </div>
+                    <div class="poetry-info">
+                        <p>这首诗描绘了清明时节京城中的景象，通过"飞花"、"御柳"等意象，展现了春天的美好。诗中既有对自然景色的描写，也有对宫廷生活的刻画。</p>
+                    </div>
+                </div>
+                <div class="poetry-card">
+                    <h3>清明日忆诸弟</h3>
+                    <p class="author">韦应物</p>
+                    <div class="poem-content">
+                        <p>冷食方多病，</p>
+                        <p>开襟一忻然。</p>
+                        <p>终令思故郡，</p>
+                        <p>烟火满晴川。</p>
+                    </div>
+                    <div class="poetry-info">
+                        <p>这首诗表达了诗人在清明时节思念家乡和亲人的情感。诗中通过"冷食"、"杏粥"等意象，展现了清明时节的习俗，同时也表达了对亲人的思念之情。</p>
+                    </div>
+                </div>
+                <div class="poetry-card">
+                    <h3>清明日忆诸弟</h3>
+                    <p class="author">韦应物</p>
+                    <div class="poem-content">
+                        <p>杏粥犹堪食，</p>
+                        <p>榆羹已稍煎。</p>
+                        <p>唯恨乖亲燕，</p>
+                        <p>坐度此芳年。</p>
+                    </div>
+                    <div class="poetry-info">
+                        <p>这首诗描写了清明时节的饮食习俗，通过"杏粥"、"榆羹"等意象，展现了清明时节的特色美食，同时也表达了对亲人的思念之情。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="section">
+            <h2>节日活动</h2>
+            <div class="activities-container">
+                <div class="activity-card">
+                    <h3>传统祭祀活动</h3>
+                    <ul>
+                        <li>扫墓祭祖
+                            <span class="activity-desc">整理墓地、献花、上香、摆放祭品</span>
+                        </li>
+                        <li>家祭
+                            <span class="activity-desc">在家中设祭坛，供奉祖先牌位</span>
+                        </li>
+                        <li>宗族祭祀
+                            <span class="activity-desc">同族宗亲共同祭拜先祖</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>踏青活动</h3>
+                    <ul>
+                        <li>郊游踏青
+                            <span class="activity-desc">亲近自然，感受春天气息</span>
+                        </li>
+                        <li>放风筝
+                            <span class="activity-desc">放飞风筝，寄托思念之情</span>
+                        </li>
+                        <li>插柳枝
+                            <span class="activity-desc">佩戴柳枝，驱邪纳福</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>文化体验活动</h3>
+                    <ul>
+                        <li>诗词朗诵会
+                            <span class="activity-desc">诵读清明诗词，感受文化魅力</span>
+                        </li>
+                        <li>书法展示
+                            <span class="activity-desc">书写清明诗词，传承书法艺术</span>
+                        </li>
+                        <li>民俗表演
+                            <span class="activity-desc">展示传统民俗，弘扬文化传统</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>美食文化</h3>
+                    <ul>
+                        <li>制作青团
+                            <span class="activity-desc">制作传统美食，体验节日氛围</span>
+                        </li>
+                        <li>品尝时令美食
+                            <span class="activity-desc">享用清明特色美食，感受节日味道</span>
+                        </li>
+                        <li>美食分享会
+                            <span class="activity-desc">分享传统美食，增进邻里情谊</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>艺术创作</h3>
+                    <ul>
+                        <li>清明主题绘画
+                            <span class="activity-desc">创作清明主题画作，展现节日意境</span>
+                        </li>
+                        <li>手工制作
+                            <span class="activity-desc">制作清明主题手工艺品，传承民间艺术</span>
+                        </li>
+                        <li>摄影采风
+                            <span class="activity-desc">记录清明时节的自然与人文景观</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>公益活动</h3>
+                    <ul>
+                        <li>文明祭扫
+                            <span class="activity-desc">倡导环保祭扫，保护生态环境</span>
+                        </li>
+                        <li>志愿服务
+                            <span class="activity-desc">为特殊群体提供清明祭扫帮助</span>
+                        </li>
+                        <li>文化传承
+                            <span class="activity-desc">组织青少年参与传统文化活动</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>图片展示</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background-image: url('images/t1.jpg');">
+                    <div class="gallery-overlay">
+                        <h3>清明扫墓</h3>
+                        <p>慎终追远，缅怀先人</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/t2.jpg');">
+                    <div class="gallery-overlay">
+                        <h3>踏青郊游</h3>
+                        <p>亲近自然，感受春意</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/t3.jpg');">
+                    <div class="gallery-overlay">
+                        <h3>放风筝</h3>
+                        <p>寄托思念，放飞心情</p>
+                    </div>
+                </div>
+                <div class="gallery-item" style="background-image: url('images/t4.jpg');">
+                    <div class="gallery-overlay">
+                        <h3>插柳枝</h3>
+                        <p>驱邪纳福，祈求平安</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos" class="section">
+            <h2>旧事清明</h2>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container">
+                        <video controls width="100%">
+                            <source src="vedios/v1.mp4" type="video/mp4">
+                            您的浏览器不支持视频播放。
+                        </video>
+                    </div>
+                    <h3>传统清明节文化习俗</h3>
+                    <p>梦回古代了解清明节的传统文化与习俗</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <h2>趣味游戏</h2>
+            <div class="games-intro">
+                <p>通过互动游戏，让您更深入地了解清明节的传统文化。每个游戏都融入了独特的文化元素，让学习变得生动有趣。</p>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>清明诗词拼图</h3>
+                    <p>将打乱的清明诗词重新排列，感受古诗词的韵律之美</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★★★</span>
+                        <span class="time">预计时间：5分钟</span>
+                    </div>
+                    <button class="btn" onclick="startPuzzleGame()">开始游戏</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎯</div>
+                    <h3>清明习俗连连看</h3>
+                    <p>连接相关的清明习俗和解释，了解传统习俗的深层含义</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★★</span>
+                        <span class="time">预计时间：3分钟</span>
+                    </div>
+                    <button class="btn" onclick="startMatchingGame()">开始游戏</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🧩</div>
+                    <h3>清明场景拼图</h3>
+                    <p>完成清明节日场景的拼图，感受节日氛围</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★★★</span>
+                        <span class="time">预计时间：4分钟</span>
+                    </div>
+                    <button class="btn" onclick="startScenePuzzle()">开始游戏</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎭</div>
+                    <h3>清明故事演绎</h3>
+                    <p>通过角色扮演，体验清明节的传统文化故事</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★★★</span>
+                        <span class="time">预计时间：6分钟</span>
+                    </div>
+                    <button class="btn" onclick="startStoryGame()">开始游戏</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">🎨</div>
+                    <h3>清明主题涂色</h3>
+                    <p>为清明主题的线稿涂色，创作属于自己的清明画作</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★</span>
+                        <span class="time">预计时间：5分钟</span>
+                    </div>
+                    <button class="btn" onclick="startColoringGame()">开始游戏</button>
+                </div>
+                <div class="game-card">
+                    <div class="game-icon">📝</div>
+                    <h3>更多游戏敬请期待</h3>
+                    <p>随着时间的划过，将会有更多的游戏上线</p>
+                    <div class="game-details">
+                        <span class="difficulty">难度：★★★★★</span>
+                        <span class="time">预计时间：好久好久</span>
+                    </div>
+                    <button class="btn" onclick="startPoetryChainGame()">敬请期待</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 留言祝福部分 -->
+    <section class="blessing-section">
+        <div class="blessing-container">
+            <h2>留言祝福</h2>
+            <div class="blessing-form">
+                <textarea id="blessing-input" placeholder="写下您的祝福语，弹幕将记住你的祝福..."></textarea>
+                <button id="submit-blessing" class="btn-primary">发送祝福</button>
+            </div>
+            <div class="blessing-wall">
+                <div class="blessing-messages"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>关于我们</h4>
+                <p>致力于传播中国传统文化，让更多人了解清明节的深厚文化内涵。</p>
+            </div>
+            <div class="footer-section">
+                <h4>联系方式</h4>
+                <p>邮箱：<a href="mailto:1357108605@qq.com">Demonpls@qq.com</a></p>
+                <p>电话：这我就不告诉你了</p>
+            </div>
+            <div class="footer-section">
+                <h4>关注我们</h4>
+                <div class="social-links">
+                    <a href="https://github.com/Demonpls" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <img src="images/GitHub.png" alt="GitHub" width="24" height="24">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://weixin.qq.com/" class="social-icon">
+                        <img src="images/weixin_1f.png" alt="微信" width="24" height="24">
+                        <span>微信</span>
+                    </a>
+                    <a href="https://space.bilibili.com/517822989?spm_id_from=333.1007.0.0" target="_blank" rel="noopener noreferrer" class="social-icon">
+                        <img src="images/bilibili账号.png" alt="哔哩哔哩" width="24" height="24">
+                        <span>哔哩哔哩</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 你的好盆友-Demonpls'-清明节科普网站. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="game-modal" class="modal">
+        <div id="game-container" class="modal-content">
+            <span class="close" aria-label="关闭">&times;</span>
+        </div>
+    </div>
+
+    <button class="back-to-top" aria-label="返回顶部">↑</button>
+
+    <div id="loading-overlay" class="loading-overlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/川井宪次 - 孤独な巡礼 (孤独的巡礼).flac" type="audio/flac">
+    </audio>
+</body>
+</html> 
